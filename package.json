@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "start:dev": "webpack-dev-server",
-    "build:dev": "webpack",
-    "build": "webpack --mode production"
+    "start:dev": "webpack-dev-server --config webpack.config.dev.js",
+    "build:dev": "webpack --config webpack.config.dev.js",
+    "build": "webpack --mode production --config webpack.config.dev.js",
+    "koa": "node ./server/index.js"
   },
   "keywords": [],
   "author": "",
